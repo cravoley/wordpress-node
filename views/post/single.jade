@@ -1,0 +1,7 @@
+extends ../layout
+
+
+block content
+    h1 #{post.title.rendered}
+    date #{post.date}
+    article.article !{post.content.rendered}

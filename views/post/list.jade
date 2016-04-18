@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+    ul
+        each post in posts
+            li
+                div
+                    a(href='#{post.link}') !{post.title.rendered}
